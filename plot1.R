@@ -1,5 +1,5 @@
-## If you so choose to run this program, I want tk let you know that
-## there is some housekeeping code whihc will clean up the environment 
+## If you so choose to run this program, I want to let you know that
+## there is some housekeeping code which will clean up the environment 
 ## of any variables after the program has completed execution. 
 
 ## load package data.table
