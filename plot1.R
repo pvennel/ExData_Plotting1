@@ -1,8 +1,13 @@
+## If you so choose to run this program, I want tk let you know that
+## there is some housekeeping code whihc will clean up the environment 
+## of any variables after the program has completed execution. 
+
 ## load package data.table
 require(data.table)
 
 ## read the data file using fread for speed
-powerConsumptionDT <- fread("household_power_consumption.txt", sep=";")
+## Suppress warnings from fread as it is ok at this time. 
+powerConsumptionDT <- suppressWarnings(fread("household_power_consumption.txt", sep=";"))
 
 ## we only need data for 2 days. So extracting only the required data.
 powerConsumptionDFFilter <- powerConsumptionDT[powerConsumptionDT$Date %in% 
